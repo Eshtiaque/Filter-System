@@ -1,0 +1,45 @@
+.sidebar {
+  width: 15%;
+  position: fixed;
+  height: 100%;
+  border-right: 1px solid #e1dada;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  margin-bottom: 4rem;
+}
+
+.logo-container h1 {
+  margin-top: 1.3rem;
+  color: #ff6600;
+}
+
+.logo-container {
+  margin-bottom: 4rem;
+}
+
+.logo-container h1 {
+  margin-top: 1.3rem;
+  color: #ff6600;
+  
+  /* --- New Styles for Font and Logo Alignment --- */
+
+  /* 1. Apply the new Poppins font */
+ 
+  font-weight: 600; /* Makes the font a bit bolder */
+  font-size: 28px;  /* Adjust the size as you like */
+
+  /* 2. Align icon and text nicely */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between the icon and text */
+}
+
+.logo-icon {
+  /* Optional: Make the icon slightly bigger */
+  font-size: 28px;
+}

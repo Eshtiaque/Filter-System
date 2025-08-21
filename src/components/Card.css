@@ -1,0 +1,157 @@
+/* Card.css (This code is correct) */
+
+/* --- The main card container --- */
+.card {
+  /* margin is removed because the grid gap handles spacing */
+  border: 2px solid #ededed;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* --- ADDED FOR SAME HEIGHT --- */
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Hover effect: Lift the card up --- */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Image container and hover zoom effect --- */
+.card-img-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.08);
+}
+
+/* --- Card details section --- */
+.card-details {
+  display: flex;
+  flex-direction: column;
+
+  /* --- ADDED FOR SAME HEIGHT (aligns bag icon to bottom) --- */
+  flex-grow: 1;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* --- Star reviews section --- */
+.card-reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #f5a623;
+  font-size: 18px;
+}
+
+.total-reviews {
+  font-size: 14px;
+  color: #757575;
+  margin-left: 10px;
+}
+
+/* --- Price and Bag section --- */
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.price del {
+  color: #9e9e9e;
+  font-weight: 400;
+  margin-right: 8px;
+}
+
+/* --- The "Add to Bag" icon --- */
+.bag {
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bag-icon {
+  color: #555;
+  font-size: 20px;
+}
+
+.bag:hover {
+  background-color: #ff6600;
+  transform: scale(1.1);
+}
+
+.bag:hover .bag-icon {
+  color: #fff;
+}
+
+
+/* ========================================= */
+/* --- Responsive Styles for Mobile & Tablet --- */
+/* ========================================= */
+@media (max-width: 768px) {
+  .card {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .card-img {
+    height: 160px; /* Make the image shorter on mobile */
+  }
+
+  .card-title {
+    font-size: 16px; /* Slightly smaller title */
+  }
+
+  .price {
+    font-size: 16px; /* Slightly smaller price */
+  }
+
+  .card-reviews {
+    font-size: 16px; /* Slightly smaller stars */
+  }
+
+  .total-reviews {
+    font-size: 12px; /* Smaller review count text */
+  }
+
+  .bag {
+    padding: 8px; /* Make the bag icon container smaller */
+  }
+
+  .bag-icon {
+    font-size: 18px; /* Make the bag icon smaller */
+  }
+}

@@ -1,0 +1,57 @@
+nav {
+  display: flex;
+  border-bottom: 0px solid #181616;
+  justify-content:end;
+  align-items: center;
+  padding: 20px;
+  z-index: 999;
+  margin-left: 2rem;
+  
+}
+
+input {
+  padding: 12px 20px;
+  border: black 1px solid;
+  background: hsl(0, 6%, 97%);
+  outline: none;
+  margin-right: 24px;
+  border-radius: 5px;
+  position: relative;
+  width: 32rem;
+  font-size: medium;
+}
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #181616;
+}
+.nav-icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 3rem;
+  color: #181616;
+}
+
+/* --- Responsive Styles for Mobile & Tablet --- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch;  /* Stretch items to full width */
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  input {
+    width: 100%; /* Make input full width */
+    margin-right: 0;
+    margin-bottom: 1rem; /* Add space below input */
+  }
+
+  .nav-icons {
+    margin-left: 0;
+    margin-top: 1rem; /* Add space above icons */
+    align-self: center; /* Center the icons */
+  }
+}
