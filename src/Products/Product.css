@@ -51,11 +51,11 @@
 .products-container {
   display: grid;
   /* This creates responsive columns that are at least 280px wide */
-  grid-template-columns: repeat(5, minmax(280px, 3fr));
+  grid-template-columns: repeat(5,minmax(10px, 1fr));
   gap: 20px; /* This is the space between cards */
   
   /* The next line keeps your original layout with the sidebar */
-  padding: 2rem 2rem 2rem 22rem; 
+  padding: 2rem 2rem 2rem 20em; 
 }
 
 /* Add this to your Products.css file */

@@ -7,10 +7,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 12px
 }
 
 .logo-container {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem
 }
 
 .logo-container h1 {
@@ -19,7 +20,7 @@
 }
 
 .logo-container {
-  margin-bottom: 4rem;
+margin-bottom: 2rem;
 }
 
 .logo-container h1 {
